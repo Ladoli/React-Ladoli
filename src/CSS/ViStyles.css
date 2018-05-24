@@ -1,0 +1,781 @@
+.topBanner {
+	width: 100%;
+	background-color: black;
+	height: 35vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#headBanner {
+	width: 50vh;
+	height: 50vh;
+	border-radius: 50%;
+	display: flex;
+	box-shadow:
+			0 0 30px 10px #fff,
+			0 0 0px 0px black inset,
+			0 0 45px 15px magenta,
+			0 0 60px 20px green,
+			0 0 80px 25px #0ff;
+	font-size: 10em;
+	color: white;
+	text-align: center;
+	align-items: center;
+	animation: eclipseShadow 3.5s infinite;
+	transition: box-shadow 2.5s;
+	z-index: 99;
+}
+
+
+#headBanner:hover {
+	box-shadow:
+				0 0 20px 8px red,
+				0 0 10px 2px red inset,
+				0 0 30px 15px magenta,
+				0 0 40px 15px purple,
+				0 0 0px 0px black;
+				/* 0 0 50px 20px green,
+				0 0 60px 25px #0ff; */
+	transition: box-shadow 2.5s;
+	animation: eclipseShadowInvert 3.5s infinite;
+}
+
+.topBanner #headBanner {
+	width: 20vh;
+	height: 20vh;
+	background-color: black;
+	display: inline-block;
+	animation: none;
+	box-shadow:
+	        0 0 10px 3px #fff,
+					0 0 10px 2px #fff inset,
+	        0 0 10px 4px magenta,
+					0 0 10px 5px green,
+	        0 0 10px 6px #0ff;
+}
+
+.topBanner #headBanner:hover {
+	box-shadow:
+					0 0 10px 3px red,
+					0 0 10px 2px #ff2500 inset,
+					0 0 10px 4px magenta,
+					0 0 10px 5px purple,
+					0 0 10px 6px black;
+	transition: box-shadow 2.5s;
+}
+
+
+
+@keyframes eclipseShadow{
+	0%   {		box-shadow:
+	        0 0 30px 10px #fff,
+					0 0 0px 0px black inset,
+	        0 0 45px 15px magenta,
+					0 0 60px 20px green,
+	        0 0 80px 25px #0ff;}
+	50%   {		box-shadow:
+	        0 0 10px 3px #fff,
+					0 0 10px 2px #fff inset,
+	        0 0 10px 4px magenta,
+					0 0 10px 5px green,
+	        0 0 10px 6px #0ff;}
+	100% {		box-shadow:
+					0 0 30px 10px #fff,
+					0 0 0px 0px black inset,
+					0 0 45px 15px magenta,
+					0 0 60px 20px green,
+					0 0 80px 25px #0ff;}
+}
+
+@keyframes eclipseShadowInvert{
+	0%   {		box-shadow:
+					0 0 10px 3px red,
+					0 0 10px 2px #ff2500 inset,
+					0 0 10px 4px magenta,
+					0 0 10px 5px purple,
+					0 0 10px 6px black;}
+	50%   {		box-shadow:
+					0 0 30px 10px red,
+					0 0 10px 2px red inset,
+					0 0 45px 15px magenta,
+					0 0 60px 20px purple,
+					0 0 80px 25px black;}
+
+	100% {		box-shadow:
+					0 0 10px 3px red,
+					0 0 10px 2px #ff2500 inset,
+					0 0 10px 4px magenta,
+					0 0 10px 5px purple,
+					0 0 10px 6px black;}
+}
+
+#V{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	filter: none;
+	transition: filter 2.5s;
+}
+
+#headBanner:hover #V{
+	filter: hue-rotate(180deg) saturate(4.5);
+	transition: filter 2.5s;
+}
+
+
+#afterBanner {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.banner {
+	background-color: rgb(0, 0, 0);
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+/*
+
+.banner::before,.banner::after {
+	content: '';
+	position: absolute;
+	box-shadow:
+		0 0 10px 2px silver;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+
+.banner::before {
+	left: 30vh;
+	top: 10vh;
+	animation: ripple1 21s infinite;
+	animation-delay: 1s;
+
+}
+
+.banner::after {
+	right: 55vh;
+	bottom: 10vh;
+	animation: ripple2 15s infinite;
+}
+
+@keyframes ripple1 {
+	0% {height: 0px; width: 0px; opacity: 1;}
+	17% {left: -70vh; top: -90vh; height: 200vh; width: 200vh; opacity: 0;}
+	18.9%  {opacity: 0; height: 0px; width: 0px}
+	19% {left: 80vh; top: 30vh; height: 0px; width: 0px; opacity: 1;}
+	29% {left: 30vh; top: -20vh; height: 100vh; width: 100vh; opacity: 0;}
+	30.9% {opacity: 0; height: 0px; width: 0px}
+	31% {left: 60vh; top: 85vh; height: 0px; width: 0px; opacity: 1;}
+	42% {left: 0vh; top: 25vh; height: 120vh; width: 120vh; opacity: 0;}
+	43.9% {opacity: 0; height: 0px; width: 0px}
+	44% {left: 50vh; top: 60vh; height: 0px; width: 0px; opacity: 1;}
+	51% {left: 10vh; top: 20vh; height: 80vh; width: 80vh; opacity: 0;}
+	52.9% {opacity: 0; height: 0px; width: 0px}
+	53% {left: 60vh; top: 10vh; height: 0px; width: 0px; opacity: 1;}
+	72% {left: -35vh; top: -85vh; height: 190vh; width: 190vh; opacity: 0;}
+	73.9% {opacity: 0; height: 0px; width: 0px}
+	74% {left: 70vh; top: 30vh; height: 0px; width: 0px; opacity: 1;}
+	99% {left: -55vh; top: -105vh; height: 250vh; width: 250vh; opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes ripple2 {
+	0%	 { height: 0px; width: 0px; opacity: 1;}
+	19% {right: -20vh; bottom: -65vh; height: 150vh; width: 150vh; opacity: 0;}
+	20.9% {opacity: 0; height: 0px; width: 0px}
+	21%	 {right: 20vh; bottom: 75vh; height: 0px; width: 0px; opacity: 1;}
+	40% {right: -60vh; bottom: -5vh; height: 160vh; width: 160vh; opacity: 0;}
+	41.9% {opacity: 0; height: 0px; width: 0px}
+	42%	 {right: 90vh; bottom: 20vh; height: 0px; width: 0px; opacity: 1;}
+	57% {right: 30vh; bottom: -40vh; height: 120vh; width: 120vh; opacity: 0;}
+	58.9% {opacity: 0; height: 0px; width: 0px}
+	59%	 {right: 75vh; bottom: 5vh; height: 0px; width: 0px; opacity: 1;}
+	87% {right: -60vh; bottom: -130vh; height: 270vh; width: 270vh; opacity: 0;}
+	88.9% {opacity: 0; height: 0px; width: 0px}
+	89%	 {right: 10vh; bottom: 75vh; height: 0px; width: 0px; opacity: 1;}
+	99% {right: -30vh; bottom: 35vh; height: 80vh; width: 80vh; opacity: 0;}
+	100% {opacity: 0;}
+} */
+
+.bannerAnimation {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 15%;
+	vertical-align: middle;
+}
+
+.arrowdown {
+		height: 50px;
+		width: 50px;
+		left:  calc(50vw - 35.35px);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+		border-bottom: 6px solid silver;
+		border-right: 6px solid silver;
+		border-radius: 5px;
+		bottom: 40px;
+		position: absolute;
+		animation: float 2s infinite;
+}
+
+@keyframes float{
+	0%   {	transform: rotate(45deg) translateY(-8px) translateX(-8px);}
+	50%   {	transform: rotate(45deg) translateY(-3px) translateX(-3px);}
+	100% {	transform: rotate(45deg) translateY(-8px) translateX(-8px);}
+}
+
+.pageFooter {
+	bottom: 0px;
+}
+
+
+p {
+	font-weight: bold;
+	font-family: 'Ubuntu';
+}
+
+#top10
+{
+	align-content: center;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+#Angelo
+{
+	display: block;
+	margin: auto;
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-ms-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+	animation: fade 2s
+}
+
+#Villadolid
+{
+	display: block;
+	margin: auto;
+	opacity: 0;
+}
+
+.declaration
+{
+	opacity:0;
+}
+
+#imgfade
+{
+	display: block;
+	margin: auto;
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-ms-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+	animation: fade 2s;
+}
+
+#fade
+{
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-ms-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+	animation: fade 2s;
+	opacity: 1;
+}
+
+
+@keyframes fade
+{
+	from{opacity:0} to{opacity:1}
+}
+
+
+#UI {
+	width: 40%;
+
+	float: left;
+}
+
+#cardStuff {
+	float: left;
+
+}
+
+footer {
+	margin-top: 20px;
+	background-color: rgb(200,200,200);
+}
+
+.cardDeck {
+	float: left;
+	display: block;
+	position: relative;
+	margin-right: 10px;
+}
+
+.cardslot {
+	float: left;
+	display: inline-block;
+	border: ridge;
+	border-bottom-color: gold;
+	border-top-color: purple;
+	border-right-color: gold;
+	border-left-color: purple;
+	position: relative;
+	background-color: white;
+}
+
+.cardAnimation {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#p1c1Animation{
+	height: 100%;
+	width: 100%;
+}
+
+.cardslot  img {
+	width: 79px;
+	height: 115px;
+}
+
+.cardDeck img {
+	width: 86px;
+	height: 122px;
+}
+
+
+.cardSpacer {
+	height: 30px;
+	display: inline-block;
+}
+
+h2{
+	text-align: center;
+}
+
+.links {
+	/* width: 100%; */
+	/* align-content: center; */
+	/* display: inline-block; */
+	/* float: left; */
+}
+
+.blackjacklinks {
+	display: inline-block;
+	text-align: center;
+}
+
+
+webimagelinks{
+	display: inline-block;
+}
+
+#result{
+	font-size: 14px;
+	font-weight: normal;
+	resize: none;
+	overflow-y: scroll;
+	height:150px;
+	width: 400px;
+	background-color : rgb(220, 220, 220);
+	color: rgb(65, 105, 225);
+}
+
+#changeName{
+	border-radius: 6px;
+	border: 2px solid rgba(220, 220, 220,.7);
+	height: 35px;
+	width: 140px;
+	font-weight: 600;
+	font-size: 1em;
+	color: rgba(220, 220, 220,.9);
+	background-image: linear-gradient(-45deg, rgba(65, 105, 225, .5), rgba(11, 16, 161, .7));
+	background-color: rgb(65, 105, 225);
+	font-family: 'Ubuntu';
+}
+
+input[type="text"], textarea {
+	background-color : #C0C0C0;
+	color: grey;
+}
+
+button{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.Spacer {
+	height: 0px;
+	width: 10%;
+}
+
+.Spacer1 {
+	height: 0px;
+	width: 0px;
+}
+
+.footerLogo
+{
+	height: 50x;
+	width: 50px;
+}
+
+.rightFooter {
+	text-align: center;
+	align-content: center;
+}
+
+p.neatParagraph
+{
+	padding-left: 15%;
+	padding-right: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	display: flex;
+
+}
+
+.proficiency{
+	font-family: 'Ubuntu';
+	font-weight: 700;
+	font-size: 30px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+	text-align: center;
+	background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+
+.proficiency div{
+	display: inline-block;
+	animation: none;
+}
+
+.proficiency:hover div{
+	color: rgba(60,60,60,.9);
+	animation: bounce 5s 1;
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	left: 0;
+}
+
+
+.proficiencyContainer:not(:hover) .shaking div{
+	animation: wobble 2s infinite;
+
+}
+
+.proficiencyBorder{
+	height: 250px;
+}
+
+@keyframes wobble {
+	0% { transform: translateX(0%); }
+	10% { transform:  rotate(-5deg); }
+	20% { transform:  rotate(5deg); }
+	30% { transform:  rotate(-5deg); }
+	40% { transform:  rotate(5deg); }
+	50% { transform:  rotate(-5deg); }
+	60% { transform:  rotate(5deg); }
+	100% { transform: translateX(0%); }
+}
+
+
+@keyframes bounce{
+	0%   {	transform: translateY(0px);}
+	5%   {	transform: translateY(8px);}
+	8%   {	transform: translateY(-21px);}
+	10%   {	transform: translateY(-25px);}
+	11%   {	transform: translateY(-21px);}
+	16%   {	transform: translateY(-5px);}
+	17%   {	transform: translateY(0px);}
+	18%   {	transform: translateY(4px);}
+	21%   {	transform: translateY(-19px);}
+	22.5%   {	transform: translateY(-23px);}
+	23.5%   {	transform: translateY(-19px);}
+	27%   {	transform: translateY(-5px);}
+	28%   {	transform: translateY(0px);}
+	29%   {	transform: translateY(2px);}
+	32%   {	transform: translateY(-16px);}
+	34%   {	transform: translateY(-20px);}
+	35%   {	transform: translateY(-16px);}
+	38%   {	transform: translateY(-5px);}
+	39%   {	transform: translateY(0px);}
+	40%   {	transform: translateY(1px);}
+	42%   {	transform: translateY(-11px);}
+	43%   {	transform: translateY(-14px);}
+	44%   {	transform: translateY(-11px);}
+	46%   {	transform: translateY(-5px);}
+	47%   {	transform: translateY(0px);}
+	48%   {	transform: translateY(0px);}
+	49%   {	transform: translateY(-7px);}
+	49.5%   {	transform: translateY(-9px);}
+	50%   {	transform: translateY(-7px);}
+	51%   {	transform: translateY(-4px);}
+	51.5%   {	transform: translateY(0px);}
+	52.5%   {	transform: translateY(0px);}
+	53.5%   {	transform: translateY(-3px);}
+	54%		{ transform: translateY(-4px);}
+	54.5%		{ transform: translateY(-3px);}
+	55%		{ transform: translateY(0px);}
+	56%		{ transform: translateY(0px);}
+	57%		{ transform: translateY(-2px);}
+	58%		{ transform: translateY(-1px);}
+	58.5%		{ transform: translateY(0);}
+	100% {	transform: translateY(0px);}
+}
+
+
+.cardAction {
+	border-radius: 50%;
+	border: 2px solid rgba(220, 220, 220,.9);
+	height: 50px;
+	width: 50px;
+	font-weight: 600;
+	background-image: linear-gradient(-54deg, gold, gold, yellow, gold, gold);
+	font-family: 'Ubuntu';
+}
+
+#endofTurn {
+	background-image: linear-gradient(-67deg, rgb(168,0,24), rgb(255,28,28));
+}
+
+#Draw {
+	background-image: linear-gradient(-180deg, rgb(0,219,7) 0%, rgb(7,125,2) 90%);
+	background-color: #28a745;
+	background-repeat: repeat-x;
+	background-position: -1px -1px;
+	background-size: 110% 110%;
+}
+
+#pvp, #vsDealer {
+	display: inline-block;
+	width: 153px;
+	height: 223px;
+}
+
+#pvp:hover #pvpFront, #vsDealer:hover #vsDealerFront {
+	transform: rotateY(90deg);
+	transition: transform 1s;
+}
+
+#pvp:hover #pvpBack, #vsDealer:hover #vsDealerBack {
+	transform: rotateY(0deg);
+	transition: transform 1s;
+	transition-delay: 1s;
+
+}
+
+#pvpFront, #vsDealerFront {
+	background-image: url('../Images/cardBack.png');
+	width: 153px;
+	height: 223px;
+	position: absolute;
+	transition: transform 1s;
+	transition-delay: 1s;
+}
+
+#pvpBack, #vsDealerBack {
+	width: 153px;
+	height: 223px;
+	position: absolute;
+	transform: rotateY(90deg);
+	transition: transform 1s;
+}
+
+#pvpBack {
+	background-image: url('../Images/cardV.png');
+}
+
+#vsDealerBack {
+	background-image: url('../Images/cardAI.png');
+}
+
+#rippleLink {
+	width: 200px;
+	height: 30px;
+	border-radius: 7px;
+	border: silver solid 1px;
+	background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 80%);
+}
+
+#rippleLink::before {
+	opacity: 1;
+	height: 0;
+	width: 0;
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+}
+
+#rippleLinkCont:hover #rippleLink::before {
+	opacity: 0;
+	height: 700px;
+	width: 700px;
+	/* border: silver 2px solid; */
+	box-shadow: 0 0 5px 2px silver;
+	transition: opacity 3.5s, height 4.5s, width 4.5s, border .5s;
+	z-index: -1;
+}
+
+#RippleContainer {
+	height: 300px;
+	width: 100%;
+	background-color: black;
+}
+
+#rippleOptions {
+	text-align: left;
+	display: inline-block;
+}
+
+.rippleOptionsLabel {
+	display: inline-block;
+	width: 200px;
+}
+
+@media (max-width: 768px) {
+	.proficiencyBorder{
+		max-width: none;
+		height: auto;
+	}
+
+	.proficiency{
+		font-size: 27px;
+	}
+}
+
+@media (max-width : 600px) {
+
+	.cardslot img {
+		width: 60px;
+		height: 88;
+	}
+
+	.cardDeck img {
+		width: 68px;
+		height: 96px;
+	}
+
+	#result{
+		height: 200px;
+		width: 240%;
+	}
+
+	p.neatParagraph
+	{
+		padding-left: 0%;
+		padding-right: 0%;
+		text-align: center;
+		width: 100%;
+	}
+
+	.banner::before {
+		animation: none !important;
+	}
+
+	.banner::after {
+		animation: none !important;
+	}
+
+	#headBanner {
+		animation: none;
+	}
+
+
+	#headBanner:hover {
+		animation: none;
+
+	}
+}
+@media (max-width : 450px) {
+
+
+	.cardslot img {
+		width: 45px;
+		height: 66px;
+	}
+
+	.cardDeck img {
+		width: 52px;
+		height: 73px;
+	}
+
+	#result{
+		height: 150px;
+		width: 180%;
+	}
+
+	.Spacer {
+		display: none;
+		width: 0;
+	}
+
+	.Spacer1 {
+		display: none;
+		width: 0;
+	}
+
+	p.neatParagraph
+	{
+		padding-left: 0%;
+		padding-right: 0%;
+		text-align: center;
+		width: 100%;
+	}
+
+}
+
+
+@media (max-width : 370px) {
+
+
+	.cardslot img {
+		width: 30px;
+		height: 44px;
+	}
+
+	.cardDeck img {
+		width: 36px;
+		height: 51px;
+	}
+
+	#result{
+		height: 150px;
+		width: 180%;
+	}
+
+	.Spacer {
+		display: none;
+		width: 0;
+	}
+
+	.Spacer1 {
+		display: none;
+		width: 0;
+	}
+
+}
