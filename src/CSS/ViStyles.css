@@ -26,6 +26,10 @@
 	animation: eclipseShadow 3.5s infinite;
 	transition: box-shadow 2.5s;
 	z-index: 99;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25vh;
+
 }
 
 
