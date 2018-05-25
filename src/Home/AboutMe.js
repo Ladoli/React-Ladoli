@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 
 class AboutMe extends Component {
@@ -10,7 +9,10 @@ class AboutMe extends Component {
   render() {
     return (
       <div>
-        
+        <div id="afterBanner"><h2 className="declaration">Welcome to My World!</h2></div>
+        <p className="neatParagraph">This is almost the same as my Portfolio page, except its in React!
+        </p>
+        <br/><br/>
       </div>
     );
   }

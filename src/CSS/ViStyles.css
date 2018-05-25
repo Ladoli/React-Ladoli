@@ -218,7 +218,7 @@
 .arrowdown {
 		height: 50px;
 		width: 50px;
-		left:  calc(50vw - 35.35px);
+		left:  calc(50vw - 26.7px);
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 		border-bottom: 6px solid silver;
@@ -274,7 +274,7 @@ p {
 
 .declaration
 {
-	opacity:0;
+	animation: fade 4s normal;
 }
 
 #imgfade
@@ -291,19 +291,22 @@ p {
 
 #fade
 {
-	-webkit-transition: opacity 2s ease-in;
+	/* -webkit-transition: opacity 2s ease-in;
 	-moz-transition: opacity 2s ease-in;
 	-ms-transition: opacity 2s ease-in;
 	-o-transition: opacity 2s ease-in;
-	transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in; */
 	animation: fade 2s;
+	animation-delay: 2s;
 	opacity: 1;
 }
 
 
 @keyframes fade
 {
-	from{opacity:0} to{opacity:1}
+	0% {opacity:0;}
+	50% {opacity:0;}
+	100% {opacity:1;}
 }
 
 
@@ -659,6 +662,14 @@ p.neatParagraph
 .rippleOptionsLabel {
 	display: inline-block;
 	width: 200px;
+}
+
+#versionLink {
+	width: 200px;
+	border-radius: 7px;
+	border: silver solid 1px;
+	background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 80%);
+	text-align: center;
 }
 
 @media (max-width: 768px) {
