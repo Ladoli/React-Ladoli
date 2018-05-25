@@ -5,6 +5,10 @@ class HomeBanner extends Component {
     document.getElementById('afterBanner').scrollIntoView({ behavior: 'smooth' });
   }
 
+  componentDidMount() {
+    window.rippleAnimation('.banner',{delay: 1, padding: [50,50], duration: [37,37], interval: 20, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40, maxRipple: 550, minRipple: 300});
+  }
+
   render() {
     return (
       <div className="banner">
