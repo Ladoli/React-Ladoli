@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 
 
@@ -33,7 +32,7 @@ class RippleScriptComponent extends Component {
       <a href="/">
         <div className="topBanner" style={{height: '500px'}}>
           <div id= "headBanner">
-            <img id="V" src="Images/VMoon.png"/>
+            <img id="V" src="Images/VMoon.png" alt="My logo"/>
           </div>
         </div>
       </a>

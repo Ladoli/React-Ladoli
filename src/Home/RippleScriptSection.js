@@ -14,7 +14,7 @@ class RippleScriptSection extends Component {
         </p>
 
         <div className="flexCenterAll" id="rippleLinkCont">
-          <a className="flexCenterAll" id="rippleLink" href="/RippleScript">
+          <a className="flexCenterAll" id="rippleLink" href="./RippleScript">
             Ripple-script
           </a>
         </div>
