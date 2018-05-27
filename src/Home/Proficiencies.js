@@ -12,41 +12,65 @@ class Proficiencies extends Component {
         <h2>I'm proficient in:</h2>
         <div className="proficiencyBorder container">
           <div className="proficiencyContainer row">
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>C#</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>C#</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>Java</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>Java</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>JavaScript</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>JavaScript</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>HTML</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>React</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency shaking">
-              <div>CSS</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency shaking">
+                <div>CSS</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>jQuery</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>HTML</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>React</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>JQuery</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>Bootstrap</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>Bootstrap</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>Meteor</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>Meteor</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>Node</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>SQL</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>Git</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>Git</div>
+              </div>
             </div>
-            <div className="col-sm-4 col-xs-12 proficiency">
-              <div>NPM</div>
+            <div className="col-sm-4 col-xs-12 profMargin">
+              <div className="proficiency">
+                <div>MongoDB</div>
+              </div>
             </div>
           </div>
         </div>

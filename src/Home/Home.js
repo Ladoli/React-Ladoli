@@ -7,7 +7,6 @@ import Salespitch from './Salespitch.js';
 import BlackjackSection from './BlackjackSection.js'
 import RippleScriptSection from './RippleScriptSection.js'
 import NonReactSection from './NonReactSection.js'
-import FooterSection from './FooterSection.js'
 
 
 
@@ -22,7 +21,6 @@ class Home extends Component {
     ReactDOM.render(<BlackjackSection />, document.getElementById('blackJackSection'));
     ReactDOM.render(<RippleScriptSection />, document.getElementById('rippleScriptSection'));
     ReactDOM.render(<NonReactSection />, document.getElementById('nonReactSection'));
-    ReactDOM.render(<FooterSection />, document.getElementById('footerSection'));
   }
 
   render() {

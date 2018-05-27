@@ -14,7 +14,7 @@ class RippleScriptSection extends Component {
         </p>
 
         <div className="flexCenterAll" id="rippleLinkCont">
-          <a className="flexCenterAll" id="rippleLink" href="https://ladoli.github.io/rippleScript.html">
+          <a className="flexCenterAll" id="rippleLink" href="/RippleScript">
             Ripple-script
           </a>
         </div>
