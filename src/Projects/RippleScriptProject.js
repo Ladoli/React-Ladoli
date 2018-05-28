@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 
 
-class RippleScriptComponent extends Component {
+class RippleScriptProject extends Component {
 
   componentDidMount() {
     window.rippleAnimation('.topBanner',{randomColors: [true, true], ripppleBlur: 20, rippleSpread: 10});
@@ -29,7 +29,7 @@ class RippleScriptComponent extends Component {
   render() {
     return (
     <div>
-      <a href="/">
+      <a href="./">
         <div className="topBanner" style={{height: '500px'}}>
           <div id= "headBanner">
             <img id="V" src="Images/VMoon.png" alt="My logo"/>
@@ -60,4 +60,4 @@ class RippleScriptComponent extends Component {
   }
 }
 
-export default RippleScriptComponent;
+export default RippleScriptProject;

@@ -40,7 +40,7 @@ class Blackjack extends Component {
     thisF = this;
     return (
       <div style={{display: 'inline-block', height: '100%', width: '100%'}}>
-        <a href="index.html">
+        <a href="./">
           <div className="topBanner">
             <div id= "headBanner">
               <img id="V" src="Images/VMoon.png" alt="my logo"/>

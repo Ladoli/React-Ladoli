@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Route } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from './Home/Home';
-import RippleScriptComponent from './Projects/RippleScriptComponent';
+import RippleScriptProject from './Projects/RippleScriptProject';
 import Blackjack from './Projects/Blackjack';
 
 
@@ -29,19 +29,18 @@ class GithubRouter extends Component {
   }
 
   componentDidMount() {
-    console.log("Mounting ", this.state)
   }
 
   render() {
-    console.log(this.state);
     console.log("This is the process.env", process.env.PUBLIC_URL)
     // debugger
     return (
       <div>
-        {/* <Route exact path={`/gameover`} component={GameOver} /> */}
-        <Route exact path="/" component={Home}/>
-        <Route path="/RippleScript" component={RippleScriptComponent}/>
-        <Route path="/Blackjack" component={Blackjack}/>
+        <Switch>
+          <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
+          <Route exact path={process.env.PUBLIC_URL+"/RippleScript"} component={RippleScriptProject}/>
+          <Route exact path={process.env.PUBLIC_URL+"/Blackjack"} component={Blackjack}/>
+        </Switch>
       </div>
     );
   }
