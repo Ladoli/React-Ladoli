@@ -14,7 +14,7 @@ class BlackjackSection extends Component {
             <div className="col-lg-6 col-sm-6 col-xs-12 blackjacklinks noSidePadding">
               <p>Play with a friend</p>
                 <br/>
-                  <a href="https://ladoli.github.io/Blackjack.html">
+                  <a href="./Blackjack">
                 <div id="pvp">
                   <div id="pvpBack"></div>
                   <div id="pvpFront"></div>

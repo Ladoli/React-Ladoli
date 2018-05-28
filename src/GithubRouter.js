@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import {Route } from 'react-router-dom';
 import Home from './Home/Home';
 import RippleScriptComponent from './Projects/RippleScriptComponent';
+import Blackjack from './Projects/Blackjack';
 
 
 class GithubRouter extends Component {
@@ -40,6 +41,7 @@ class GithubRouter extends Component {
         {/* <Route exact path={`/gameover`} component={GameOver} /> */}
         <Route exact path="/" component={Home}/>
         <Route path="/RippleScript" component={RippleScriptComponent}/>
+        <Route path="/Blackjack" component={Blackjack}/>
       </div>
     );
   }
