@@ -11,7 +11,7 @@ class Proficiencies extends Component {
       <div>
         <h2>I'm proficient in:</h2>
         <div className="proficiencyBorder container">
-          <div className="proficiencyContainer row">
+          <div className="proficiencyContainer row animateOnScroll hiddenStateScroll">
             <div className="col-sm-4 col-xs-12 profMargin">
               <div className="proficiency">
                 <div>C#</div>

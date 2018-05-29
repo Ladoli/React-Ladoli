@@ -15,7 +15,7 @@ class BlackjackSection extends Component {
               <p>Play with a friend</p>
                 <br/>
                   <a href="./Blackjack">
-                <div id="pvp">
+                <div className="animateOnScroll hiddenStateScroll" id="pvp">
                   <div id="pvpBack"></div>
                   <div id="pvpFront"></div>
                 </div>
@@ -25,7 +25,7 @@ class BlackjackSection extends Component {
               <p>Play against the Dealer</p>
                 <br/>
                   <a href="https://ladoli.github.io/BlackjackAI.html">
-                <div id="vsDealer">
+                <div className="animateOnScroll hiddenStateScroll" id="vsDealer">
                   <div id="vsDealerBack"></div>
                   <div id="vsDealerFront"></div>
                 </div>

@@ -13,7 +13,7 @@ class RippleScriptSection extends Component {
           Did you like the ripples at the top banner? Play around with them more here!
         </p>
 
-        <div className="flexCenterAll" id="rippleLinkCont">
+        <div className="flexCenterAll animateOnScroll hiddenStateScroll" id="rippleLinkCont" >
           <a className="flexCenterAll" id="rippleLink" href="./RippleScript">
             Ripple-script
           </a>

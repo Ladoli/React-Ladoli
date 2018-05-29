@@ -15,7 +15,7 @@ class NonReactSection extends Component {
           Why make a static page in React? Because I can.
         </p>
 
-        <div className="flexCenterAll">
+        <div id="nonReactContainer" className="flexCenterAll animateOnScroll hiddenStateScroll">
           <a className="flexCenterAll" id="versionLink" href="https://ladoli.github.io/index.html">
             Click here to go back to a non-react version.
           </a>

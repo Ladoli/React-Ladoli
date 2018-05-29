@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import {Route} from 'react-router-dom';
 import HomeBanner from './HomeBanner.js';
 import AboutMe from './AboutMe.js';
 import Proficiencies from './Proficiencies.js';
@@ -8,40 +8,51 @@ import BlackjackSection from './BlackjackSection.js'
 import RippleScriptSection from './RippleScriptSection.js'
 import NonReactSection from './NonReactSection.js'
 
-
+let thisF ="";
 
 
 class Home extends Component {
 
   componentDidMount() {
-    ReactDOM.render(<HomeBanner />, document.getElementById('banner'));
-    ReactDOM.render(<AboutMe />, document.getElementById('aboutMe'));
-    ReactDOM.render(<Proficiencies />, document.getElementById('proficientIn'));
-    ReactDOM.render(<Salespitch />, document.getElementById('salesPitch'));
-    ReactDOM.render(<BlackjackSection />, document.getElementById('blackJackSection'));
-    ReactDOM.render(<RippleScriptSection />, document.getElementById('rippleScriptSection'));
-    ReactDOM.render(<NonReactSection />, document.getElementById('nonReactSection'));
+    window.addEventListener('scroll', this.scrollAnimations);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollAnimations);
+  }
+
+  scrollAnimations(){
+    let animatables = document.querySelectorAll(".animateOnScroll");
+    animatables.forEach(function(element){
+      thisF.isInView(element);
+    });
+    thisF.isInView(document.getElementsByClassName("banner")[0]);
+  }
+
+  isInView(element){
+    let imagePos = element.getBoundingClientRect().y;
+    let screenHeight = window.innerHeight;
+    let imageHeight = window.getComputedStyle(element).height.split("p")[0];
+    let negative = 0 - imageHeight;
+    if(imagePos > negative && imagePos < screenHeight){
+      element.classList.remove("hiddenStateScroll");
+    }
+    else {
+      element.classList.add("hiddenStateScroll");
+    }
   }
 
   render() {
+    thisF = this;
     return (
       <div>
-        <div id="banner">
-        </div>
-        <div id="aboutMe">
-        </div>
-        <div id="proficientIn">
-        </div>
-        <div id="salesPitch">
-        </div>
-        <div id="blackJackSection">
-        </div>
-        <div id="rippleScriptSection">
-        </div>
-        <div id="nonReactSection">
-        </div>
-        <div id="footerSection">
-        </div>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={HomeBanner}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={AboutMe}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={Proficiencies}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={BlackjackSection}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/>
       </div>
     );
   }
