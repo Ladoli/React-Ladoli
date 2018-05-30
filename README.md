@@ -3,4 +3,3 @@
 ## In-progress
 BlackjackAI demo to React
 
-Routing during Incognito Browsing
