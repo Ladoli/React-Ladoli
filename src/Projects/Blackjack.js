@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
 import swal from 'sweetalert2';
+import ProjectBanner from './ProjectBanner.js'
 
 let cardsInDeck = new Array(); //Array of cards not draw/in the deck
 let P1 = 0; //Score or total value of the cards Player 1 has
@@ -40,13 +42,7 @@ class Blackjack extends Component {
     thisF = this;
     return (
       <div style={{display: 'inline-block', height: '100%', width: '100%'}}>
-        <a href="./">
-          <div className="topBanner">
-            <div id= "headBanner">
-              <img id="V" src="Images/VMoon.png" alt="my logo"/>
-            </div>
-          </div>
-        </a>
+        <Route render={()=><ProjectBanner/>}/>
         <div className="container">
           <div className="row">
         <div className="col-md-5 col-sm-12" style={{display: "inline-block", width: '100%', height: '100%'}}>

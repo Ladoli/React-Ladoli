@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import {Route} from 'react-router-dom';
+import ProjectBanner from './ProjectBanner.js'
 
 
 
@@ -29,14 +30,7 @@ class RippleScriptProject extends Component {
   render() {
     return (
     <div>
-      <a href="./">
-        <div className="topBanner" style={{height: '500px'}}>
-          <div id= "headBanner">
-            <img id="V" src="Images/VMoon.png" alt="My logo"/>
-          </div>
-        </div>
-      </a>
-
+      <Route render={()=><ProjectBanner styleProp={{height: '500px'}}/>}/>
       <p className="neatParagraph">This is one of my reusable projects.
         I've developed a hobby creating CSS animations but they are quite tricky.
         This script, which I named as Ripple-Script, allows anyone to easily add a ripple CSS to their pages as seen above.
