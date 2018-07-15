@@ -4,6 +4,8 @@ import Home from './Home/Home';
 import FooterSection from './FooterSection.js'
 import RippleScriptProject from './Projects/RippleScriptProject';
 import Blackjack from './Projects/Blackjack';
+import LoanGUI from './Projects/LoanGUI';
+
 // import BlackjackAI from './Projects/BlackjackAI';
 
 
@@ -21,6 +23,7 @@ class AppRouter extends Component {
           <Route exact path={process.env.PUBLIC_URL+"/RippleScript"} component={RippleScriptProject}/>
           <Route exact path={process.env.PUBLIC_URL+"/Blackjack"} component={Blackjack}/>
           {/* <Route exact path={process.env.PUBLIC_URL+"/BlackjackAI"} component={BlackjackAI}/> */}
+          <Route exact path={process.env.PUBLIC_URL+"/LoanGUI"} component={LoanGUI}/>
         </Switch>
           <Route path={process.env.PUBLIC_URL+"/"} component={FooterSection}/>
       </div>
