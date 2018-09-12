@@ -11,11 +11,12 @@ class FooterSection extends Component {
       <div>
         <footer className="">
           <div className="">
-            <div className="">
+            <div style={{textAlign: "center"}}>
               Contact Me!
               <br/>Email: villadolidangeloryan@gmail.com
             </div>
           </div>
+          <br/>
           <div className="">
             <div className="rightFooter">
               Github
