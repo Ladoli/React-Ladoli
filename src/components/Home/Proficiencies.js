@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card, Icon, Image } from 'semantic-ui-react';
 
 
 class Proficiencies extends Component {
@@ -8,84 +9,99 @@ class Proficiencies extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{clear:"both",display: "block", width: "100%"}}>
         <h2>I'm proficient in:</h2>
         <div className="proficiencyBorder container">
           <div className="proficiencyContainer row ">
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>JavaScript</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>React</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Redux</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
+                <div>Axios</div>
+              </Card>
+            </div>
+            <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
+              <Card className="proficiency">
+                <div>Firebase</div>
+              </Card>
+            </div>
+            <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
+              <Card className="proficiency">
+                <div>Reworm</div>
+              </Card>
+            </div>
+            <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
+              <Card className="proficiency">
                 <div>HTML</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency shaking">
+              <Card className="proficiency shaking">
                 <div>CSS</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Bootstrap</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Java</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>C#</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Meteor</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>SQL</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Git</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>MongoDB</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Python</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Tensorflow</div>
-              </div>
+              </Card>
             </div>
             <div className="col-sm-4 col-xs-12 profMargin animateOnScroll hiddenStateScroll">
-              <div className="proficiency">
+              <Card className="proficiency">
                 <div>Node</div>
-              </div>
+              </Card>
             </div>
 
           </div>

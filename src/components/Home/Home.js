@@ -6,7 +6,7 @@ import Proficiencies from './Proficiencies.js';
 import Salespitch from './Salespitch.js';
 import BlackjackSection from './BlackjackSection.js'
 import RippleScriptSection from './RippleScriptSection.js'
-import NonReactSection from './NonReactSection.js'
+// import NonReactSection from './NonReactSection.js'
 
 let thisF ="";
 
@@ -52,7 +52,7 @@ class Home extends Component {
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={BlackjackSection}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/>
-        <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/>
+        {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/> */}
       </div>
     );
   }

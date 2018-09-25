@@ -8,8 +8,8 @@ class FooterSection extends Component {
 
   render() {
     return (
-      <div>
-        <footer className="">
+      <div >
+        <footer style={{paddingTop: "2vh"}} className="">
           <div className="">
             <div style={{textAlign: "center"}}>
               Contact Me!

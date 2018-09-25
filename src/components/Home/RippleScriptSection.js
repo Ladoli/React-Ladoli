@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 
 
 class RippleScriptSection extends Component {
@@ -8,15 +10,13 @@ class RippleScriptSection extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{marginBottom: "20%"}}>
         <p className="neatParagraph">
           Did you like the ripples at the top banner? Play around with them more here!
         </p>
 
         <div className="flexCenterAll animateOnScroll hiddenStateScroll" id="rippleLinkCont" >
-          <a className="flexCenterAll" id="rippleLink" href="./RippleScript">
-            Ripple-script
-          </a>
+          <Button as={ Link } to='RippleScript' primary className="flexCenterAll" id="rippleLink">Ripple-script</Button>
         </div>
       </div>
     );

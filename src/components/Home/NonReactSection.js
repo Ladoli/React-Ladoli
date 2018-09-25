@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 
 class NonReactSection extends Component {
 
@@ -16,9 +17,12 @@ class NonReactSection extends Component {
         </p>
 
         <div id="nonReactContainer" className="flexCenterAll animateOnScroll hiddenStateScroll">
-          <a className="flexCenterAll" id="versionLink" href="https://ladoli.github.io/index.html">
+          <Button as={ Link } to='https://ladoli.github.io/index.html' className="flexCenterAll" id="versionLink">
             Click here to go back to a non-react version.
-          </a>
+          </Button>
+          {/* <a className="flexCenterAll" id="versionLink" href="https://ladoli.github.io/index.html">
+            Click here to go back to a non-react version.
+          </a> */}
         </div>
         <br/>
       </div>

@@ -266,7 +266,7 @@ body{
 
 		p {
 			font-weight: bold;
-			font-family: 'Ubuntu';
+			font-family: 'Ubuntu', sans-serif;
 		}
 
 		#top10
@@ -440,7 +440,7 @@ body{
 			color: rgba(220, 220, 220,.9);
 			background-image: linear-gradient(-45deg, rgba(65, 105, 225, .5), rgba(11, 16, 161, .7));
 			background-color: rgb(65, 105, 225);
-			font-family: 'Ubuntu';
+			font-family: 'Ubuntu', sans-serif;
 		}
 
 		input[type="text"], textarea {
@@ -449,9 +449,7 @@ body{
 		}
 
 		button{
-			padding: 0;
-			border: none;
-			background: none;
+			border-radius: 6px;
 		}
 
 		.Spacer {
@@ -490,7 +488,7 @@ body{
 		}
 
 		.proficiency{
-			font-family: 'Ubuntu';
+			font-family: 'Ubuntu', sans-serif;
 			font-weight: 700;
 			font-size: 30px;
 			border-top: 1px solid #d9d9d9;
@@ -500,6 +498,8 @@ body{
 			box-shadow: 2px 5px 5px 2px silver;
 			transition: box-shadow 5s;
 			overflow: hidden;
+			height: 70px;
+
 		}
 
 		.proficiency:hover{
@@ -531,14 +531,15 @@ body{
 			animation: none;
 			transform: scale(1,1);
 			transition: transform 5s;
+			margin: auto;
+
 		}
 
 		.proficiency:hover div{
 			color: rgba(60,60,60,.9);
 			/* animation: bounce 5s 1; */
-			transform: scale(1.4,1.4);
+			transform: scale(1.1,1.1);
 			transition: transform 1s;
-			margin: auto;
 			width: 100%;
 			left: 0;
 			border-radius: 10px;
@@ -556,16 +557,14 @@ body{
 			transition-delay: .3s;
 		}
 
-		.proficiencyBorder{
-			height: 250px;
-		}
+
 
 		@keyframes wobble {
 			0% { transform: translateX(0%); }
 			10% { transform:  rotate(-5deg); }
 			20% { transform:  rotate(5deg); }
 			30% { transform:  rotate(-5deg); }
-			40% { transform:  rotate(5deg); }
+			40% { tranproficiencyIconsform:  rotate(5deg); }
 			50% { transform:  rotate(-5deg); }
 			60% { transform:  rotate(5deg); }
 			100% { transform: translateX(0%); }
@@ -624,7 +623,7 @@ body{
 			width: 50px;
 			font-weight: 600;
 			background-image: linear-gradient(-54deg, gold, gold, yellow, gold, gold);
-			font-family: 'Ubuntu';
+			font-family: 'Ubuntu', sans-serif;
 		}
 
 		#endofTurn {
@@ -849,6 +848,7 @@ body{
 
 		a{
 			transition: text-shadow 1.5s;
+			font-family: 'Ubuntu', sans-serif;
 		}
 
     #portfolioPic{
@@ -876,6 +876,38 @@ body{
 			transition: box-shadow 1s;
 		}
 
+		.fader{
+			animation: fadeInOut 2s infinite;
+			margin-top: 40px;
+			margin-bottom: 30%;
+		}
+
+		@keyframes fadeInOut {
+		  0% { opacity: .1}
+			60% { opacity: .9}
+		  100% { opacity: .1}
+		}
+
+		h4{
+			width: 100%;
+		}
+
+		.top-Nav-Vi{
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: black;
+			/* border: rgb(240,240,240) 1px solid;
+			border-radius: 6px; */
+			height: 5vh;
+			color: rgb(240,240,240);
+			font-size: 3vh;
+		}
+
+		.top-Nav-Vi a{
+			text-shadow: 1px 1px rgb(0,240,255);
+			font-weight: 400;
+		}
 
 
 
@@ -889,8 +921,39 @@ body{
 
 
 
+/* Loading Code */
+
+.viLoader {
+  border:  solid transparent;
+  border-radius: 50%;
+  /* border-top: 5vw solid rgb(75, 255, 255);*/
+  border-left:  2vw solid transparent;
+	border-right: 2vw solid rgb(50, 255, 255);
+  border-bottom: 2vw solid rgb(0, 255, 255);
+  width: 30vw;
+  height: 30vw;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); opacity: .3}
+	50% { opacity: 1}
+  100% { transform: rotate(360deg); opacity: .3}
+}
 
 
+
+
+
+
+/* Screen Size code below */
 
 
 
