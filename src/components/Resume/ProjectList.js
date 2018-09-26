@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { map, isEmpty } from "lodash";
 import * as actions from "../../actions";
 import ProjectItem from "./ProjectItem";
-import { Card, Header, Segment } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 class ToDoList extends Component {
   state = {
@@ -17,7 +17,11 @@ class ToDoList extends Component {
       return <ProjectItem project={value} key={key} />;
     });
     if (!isEmpty(projects)) {
-      return projects;
+      return (
+        <Card.Group className="cardsVi">
+          {projects}
+        </Card.Group>
+      )
     }
     return (
       <div style={{width: "100%",textAlign: "center", paddingTop: "20%"}}>
@@ -41,14 +45,16 @@ class ToDoList extends Component {
             width: "100%",
             backgroundImage: "linear-gradient(160deg, rgb(189,195,225), rgb(120,179,191),rgb(150,208,221), #eef2f3)",
             marginTop: "20px",
-            marginBottom: "20px"
+            marginBottom: "4vh"
           }}>
             <h1 style={{width: "100%", marginTop: "20px", marginBottom: "20px", color: "rgb(255,255,255)"}} >
               My Projects
             </h1>
           </Card>
           <br/>
-          {this.renderProjects()}
+          <div className="flexCenter" style={{display: "flex", width: "100%"}}>
+              {this.renderProjects()}
+          </div>
         </div>
       </div>
     );

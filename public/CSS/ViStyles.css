@@ -1,5 +1,6 @@
 body{
-	background-color: rgb(240,240,240);
+	background-color: rgb(240,240,240) !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .topBanner {
@@ -128,12 +129,12 @@ body{
 						}
 
 
-						#afterBanner {
+						/* #afterBanner {
 							width: 100%;
 							padding-top:80px;
 							background-image: linear-gradient(180deg, rgb(15, 15, 15),rgb(245, 245, 245),rgb(240, 240, 240));
 
-						}
+						} */
 
 						.banner {
 							background-color: rgb(0, 0, 0);
@@ -237,6 +238,10 @@ body{
 		.animateOnScroll{
 			opacity: 1;
 			transition: opacity 3s;
+			-webkit-transition:  opacity 3s; /* Safari */
+			-moz-transition: opacity 3s;
+        -o-transition: opacity 3s;
+
 		}
 
 		.animateOnScroll.hiddenStateScroll{
@@ -266,7 +271,7 @@ body{
 
 		p {
 			font-weight: bold;
-			font-family: 'Ubuntu', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 
 		#top10
@@ -398,7 +403,7 @@ body{
 			display: inline-block;
 		}
 
-		h2{
+		h1,h2,h3,h4,h5,h6{
 			text-align: center;
 		}
 
@@ -440,7 +445,7 @@ body{
 			color: rgba(220, 220, 220,.9);
 			background-image: linear-gradient(-45deg, rgba(65, 105, 225, .5), rgba(11, 16, 161, .7));
 			background-color: rgb(65, 105, 225);
-			font-family: 'Ubuntu', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 
 		input[type="text"], textarea {
@@ -488,9 +493,9 @@ body{
 		}
 
 		.proficiency{
-			font-family: 'Ubuntu', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 			font-weight: 700;
-			font-size: 30px;
+			font-size: 2vh;
 			border-top: 1px solid #d9d9d9;
 			border-radius: 10px;
 			text-align: center;
@@ -498,8 +503,8 @@ body{
 			box-shadow: 2px 5px 5px 2px silver;
 			transition: box-shadow 5s;
 			overflow: hidden;
-			height: 70px;
-
+			height: 5vh;
+			width: 100% !important;
 		}
 
 		.proficiency:hover{
@@ -529,8 +534,8 @@ body{
 		.proficiency div{
 			display: inline-block;
 			animation: none;
-			transform: scale(1,1);
-			transition: transform 5s;
+			/* transform: scale(1,1);
+			transition: transform 5s; */
 			margin: auto;
 
 		}
@@ -538,8 +543,8 @@ body{
 		.proficiency:hover div{
 			color: rgba(60,60,60,.9);
 			/* animation: bounce 5s 1; */
-			transform: scale(1.1,1.1);
-			transition: transform 1s;
+			/* transform: scale(1.1,1.1);
+			transition: transform 1s; */
 			width: 100%;
 			left: 0;
 			border-radius: 10px;
@@ -547,11 +552,14 @@ body{
 
 		.profMargin{
 			margin-top: 20px;
+			margin-right: 2vw;
+			margin-left: 2vw;
+			text-align: center;
 		}
 
-		.proficiencyContainer:not(:hover) .shaking div{
+		/* .proficiencyContainer:not(:hover) .shaking div{
 			animation: wobble 2s infinite;
-		}
+		} */
 
 		.proficiencyContainer{
 			transition-delay: .3s;
@@ -623,7 +631,7 @@ body{
 			width: 50px;
 			font-weight: 600;
 			background-image: linear-gradient(-54deg, gold, gold, yellow, gold, gold);
-			font-family: 'Ubuntu', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 
 		#endofTurn {
@@ -847,8 +855,8 @@ body{
 		}
 
 		a{
-			transition: text-shadow 1.5s;
-			font-family: 'Ubuntu', sans-serif;
+			/* transition: text-shadow 1.5s; */
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 
     #portfolioPic{
@@ -894,23 +902,56 @@ body{
 
 		.top-Nav-Vi{
 			width: 100%;
+			padding-top: 3px;
 			padding-left: 20px;
 			padding-right: 20px;
 			background-color: black;
 			/* border: rgb(240,240,240) 1px solid;
 			border-radius: 6px; */
-			height: 5vh;
+			height: calc(5vh + 3px);
 			color: rgb(240,240,240);
 			font-size: 3vh;
+			overflow: visible;
+
 		}
 
 		.top-Nav-Vi a{
-			text-shadow: 1px 1px rgb(0,240,255);
-			font-weight: 400;
+			overflow: visible;
+			color: rgba(240,240,240, .7);
+			text-transform: uppercase;
+			/* text-shadow: 1px 1px rgb(0,240,255); */
 		}
 
+		.proficiencyBlock{
+			background-color: rgba(50,50,50, .8);
+			background-image: linear-gradient(20deg,
+															rgba(18,18,18,1) 0%,
+															rgba(0,0,0,1) 7%,
+															rgba(15,15,15,0.97) 39%,
+															rgba(5,5,5,0.97) 49%,
+															rgba(15,15,15,0.96) 57%,
+															rgba(10,10,10,0.95) 74%,
+															rgba(10,10,10,0.95) 76%,
+															rgba(8,8,8,0.94) 91%,
+															rgba(5,5,5,0.93) 100%);
+		}
 
+		.skillsIcons{
+			max-width: 7vw;
+			min-width: 50px;
+		}
+		
+		.cardsVi{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
+		.flexCenter {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
 
 
@@ -924,6 +965,7 @@ body{
 /* Loading Code */
 
 .viLoader {
+	display: inline-block;
   border:  solid transparent;
   border-radius: 50%;
   /* border-top: 5vw solid rgb(75, 255, 255);*/

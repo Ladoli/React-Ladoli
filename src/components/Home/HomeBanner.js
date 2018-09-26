@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class HomeBanner extends Component {
   scrollToMain(){
-    document.getElementById('afterBanner').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('portfolioPic').scrollIntoView({ behavior: 'smooth' });
   }
 
   componentDidMount() {
-    window.rippleAnimation('.banner',{delay: 1, padding: [50,50], duration: [37,37], interval: 20, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40, maxRipple: 550, minRipple: 300});
+    window.rippleAnimation('.banner',{delay: 1.7, padding: [50,50], duration: [37,37], interval: 10, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40, maxRipple: 550, minRipple: 300});
   }
 
   render() {

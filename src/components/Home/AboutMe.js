@@ -8,21 +8,18 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div>
-        <div id="afterBanner"><h2 className="declaration animateOnScroll hiddenStateScroll">Welcome to My World!</h2></div>
-        <div style={{display: "inline-block", width: "100%", height: "200px"}}>
-
+      <div className="flexCenter" style={{minHeight: "100vh", display: "flex"}}>
+        <div style={{display: "inline-block", width: "100%"}}>
           <div style={{ display: "inline-block", verticalAlign: "bottom", textAlign: "center", width: "100%"}}>
             <a href="https://www.linkedin.com/in/angelo-villadolid-216314163/"><img src="Images/PortfolioPic.jpg" id="portfolioPic"/></a>
             <br/>
-            <p style={{margin: "0px", opacity: ".7"}}>Fullstack Developer</p>
-            <p style={{fontSize: "20px"}}>Angelo Villadolid</p>
+            <p style={{fontSize: "3vh", margin: "0px", opacity: ".7"}}>Fullstack Developer</p>
+            <p style={{fontSize: "5vh", color: "rgb(50,50,50)"}}>Angelo Villadolid</p>
           </div>
 
         </div>
         {/* <p className="neatParagraph">This is almost the same as my Portfolio page, except its in React! Currently converting my BlackjackAI game into React. All other pages have been fully integrated into React already.
         </p> */}
-        <br/><br/>
       </div>
     );
   }

@@ -10,13 +10,13 @@ class RippleScriptSection extends Component {
 
   render() {
     return (
-      <div style={{marginBottom: "20%"}}>
-        <p className="neatParagraph">
+      <div>
+        <p className="neatParagraph" style={{color: "rgb(80,80,80)"}}>
           Did you like the ripples at the top banner? Play around with them more here!
         </p>
 
-        <div className="flexCenterAll animateOnScroll hiddenStateScroll" id="rippleLinkCont" >
-          <Button as={ Link } to='RippleScript' primary className="flexCenterAll" id="rippleLink">Ripple-script</Button>
+        <div className="flexCenterAll animateOnScroll hiddenStateScroll" >
+          <Button as={ Link } to='RippleScript' primary className="flexCenterAll" >Ripple-script</Button>
         </div>
       </div>
     );
