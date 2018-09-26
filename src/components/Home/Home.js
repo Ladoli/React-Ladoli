@@ -8,26 +8,33 @@ import BlackjackSection from './BlackjackSection.js'
 import RippleScriptSection from './RippleScriptSection.js'
 // import NonReactSection from './NonReactSection.js'
 
-let thisF ="";
-
-
 class Home extends Component {
+
+  scrollAnimations(){
+    let animatables = document.querySelectorAll(".animateOnScroll");
+    let that = this;
+    animatables.forEach(function(element){
+      that.isInView(element);
+    });
+    that.isInView(document.getElementsByClassName("banner")[0]);
+  }
+
+
+  constructor(props){
+    super(props);
+    this.scrollAnimations = this.scrollAnimations.bind(this);
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollAnimations);
+    window.addEventListener('mousemove', this.scrollAnimations); //Somewhat fixes bug on some Chrome browsers where onscroll is not triggering... Probably due to plugins installed.
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollAnimations);
+    window.removeEventListener('mousemove', this.scrollAnimations);
   }
 
-  scrollAnimations(){
-    let animatables = document.querySelectorAll(".animateOnScroll");
-    animatables.forEach(function(element){
-      thisF.isInView(element);
-    });
-    thisF.isInView(document.getElementsByClassName("banner")[0]);
-  }
 
   isInView(element){
     let imagePos = element.getBoundingClientRect().y;
@@ -43,7 +50,7 @@ class Home extends Component {
   }
 
   render() {
-    thisF = this;
+    this.scrollAnimations = this.scrollAnimations.bind(this);
     return (
       <div>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={HomeBanner}/>
