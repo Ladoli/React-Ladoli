@@ -1,6 +1,6 @@
 body{
 	background-color: rgb(240,240,240) !important;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif !important; */
 }
 
 .topBanner {
@@ -268,6 +268,9 @@ body{
 			bottom: 0px;
 		}
 
+		footer{
+
+		}
 
 		p {
 			font-weight: bold;
@@ -860,29 +863,18 @@ body{
 		}
 
     #portfolioPic{
-      height: 200px;
-      width: 190px;
+      height: 50vh;
+      width: 50vh;
       object-fit: cover;
       border-radius: 50%;
       border: 1px solid rgba(220,220,220,.7);
-      box-shadow:
-			0px 1px 1px 1px rgba(0, 220, 220, .3),
-      0px 1px 0px 1px rgba(220, 220, 220, .3),
-			0px 2px 0px 1px rgb(240, 240, 240);
       margin-bottom: 20px;
-			transition: box-shadow 3s;
     }
 
 		#portfolioPic:hover{
-			box-shadow:
-			1px 0px 3px rgb(0, 255, 255),
-			0px 1px 5px rgb(250, 255, 255),
-			1px 0px 10px rgb(0, 255, 255),
-			0px 1px 3px rgb(0, 255, 255),
-			0px 0px 5px rgb(250, 255, 255),
-			0px 0px 10px rgb(0, 255, 255);
-			transition: box-shadow 1s;
+			opacity:0.8;
 		}
+
 
 		.fader{
 			animation: fadeInOut 2s infinite;
@@ -955,19 +947,75 @@ body{
 					transition: box-shadow 1.5s !important;
 		}
 
-		.skillsCardsVi:hover{
+		/* .skillsCardsVi:hover{
+			overflow: visible;
+			transform: scale(1.1,1.1);
+			transition: box-shadow .5s !important;
+		} */
+
+		.sCVi-1:hover{
 			overflow: visible;
 			box-shadow:
-					0px 0px 50px magenta,
-					0px 0px 75px blue,
-					0px 0px 150px red,
-					0px 0px 250px cyan,
-					0px 0px 350px green,
-					0px 0px 500px cyan
+				0px 0px 30px white,
+				0px 0px 30px white,
+				0px 0px 30px white,
+				0px 0px 30px white,
+				0px 0px 55px blue,
+				0px 0px 75px blue,
+				0px 0px 95px blue
 					!important;
 			transform: scale(1.1,1.1);
 			transition: box-shadow .5s !important;
 		}
+
+		.sCVi-2:hover{
+			overflow: visible;
+			box-shadow:
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 55px orange,
+					0px 0px 75px orange,
+					0px 0px 95px orange
+					!important;
+			transform: scale(1.1,1.1);
+			transition: box-shadow .5s !important;
+		}
+
+		.sCVi-3:hover{
+			overflow: visible;
+			box-shadow:
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 55px red,
+					0px 0px 75px red,
+					0px 0px 95px red
+					!important;
+			transform: scale(1.1,1.1);
+			transition: box-shadow .5s !important;
+		}
+
+		.sCVi-4:hover{
+			overflow: visible;
+			box-shadow:
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 30px white,
+					0px 0px 55px #7FFF00,
+					0px 0px 75px #7FFF00,
+					0px 0px 95px #7FFF00
+					!important;
+			transform: scale(1.1,1.1);
+			transition: box-shadow .5s !important;
+		}
+
+
+
+
 
 		.flexCenter {
 			display: flex;
@@ -1148,3 +1196,8 @@ body{
 			}
 
 		}
+
+
+	* {
+		font-family: 'Montserrat', sans-serif !important;
+	}

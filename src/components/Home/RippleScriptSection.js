@@ -10,7 +10,7 @@ class RippleScriptSection extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{display: "inline-block", width: "100%"}}>
         <p className="neatParagraph" style={{color: "rgb(80,80,80)"}}>
           Did you like the ripples at the top banner? Play around with them more here!
         </p>

@@ -4,8 +4,8 @@ import HomeBanner from './HomeBanner.js';
 import AboutMe from './AboutMe.js';
 import Proficiencies from './Proficiencies.js';
 import Salespitch from './Salespitch.js';
-import BlackjackSection from './BlackjackSection.js'
-import RippleScriptSection from './RippleScriptSection.js'
+// import BlackjackSection from './BlackjackSection.js'
+// import RippleScriptSection from './RippleScriptSection.js'
 // import NonReactSection from './NonReactSection.js'
 
 class Home extends Component {
@@ -57,8 +57,7 @@ class Home extends Component {
         <Route exact path={process.env.PUBLIC_URL+"/"} component={AboutMe}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Proficiencies}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/>
-        <Route exact path={process.env.PUBLIC_URL+"/"} component={BlackjackSection}/>
-        <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/>
+        {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/> */}
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/> */}
       </div>
     );

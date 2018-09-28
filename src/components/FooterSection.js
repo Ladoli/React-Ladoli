@@ -12,8 +12,11 @@ class FooterSection extends Component {
         <footer style={{paddingTop: "2vh"}} className="">
           <div className="">
             <div style={{textAlign: "center"}}>
-              Contact Me!
-              <br/>Email: villadolidangeloryan@gmail.com
+              <p style={{fontWeight: "500" }}>
+                Hire Me!
+              </p>
+              villadolidangeloryan@gmail.com
+
             </div>
           </div>
           <br/>
