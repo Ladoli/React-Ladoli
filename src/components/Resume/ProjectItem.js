@@ -22,7 +22,7 @@ class ProjectItem extends Component {
           {project.name}
         </h4>
         <hr style={{marginLeft: "20px", marginRight: "20px", marginTop: "2vh", borderColor: "rgb(0, 205, 255)"}}></hr>
-        <p style={{marginLeft: "20px", marginRight: "20px", fontWeight: "200"}}>{project.desc}</p>
+        <p style={{marginLeft: "20px", marginRight: "20px", fontWeight: "300"}}>{project.desc}</p>
       </div>
     );
   }
