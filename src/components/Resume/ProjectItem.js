@@ -2,9 +2,6 @@ import React, { Component } from "react";
 
 class ProjectItem extends Component {
 
-  constructor(props){
-    super(props)
-  }
 
   render() {
     let project = this.props.project;

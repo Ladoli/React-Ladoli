@@ -1,7 +1,8 @@
-import { database, initializeApp } from "firebase";
+import firebase from "firebase/app";
+import 'firebase/database';
 
 import { FirebaseConfig } from "../config/keys";
-initializeApp(FirebaseConfig);
+firebase.initializeApp(FirebaseConfig);
 
-const databaseRef = database().ref();
+const databaseRef = firebase.database().ref();
 export const ladoliProjects = databaseRef.child("ladoli-resume/projects");
