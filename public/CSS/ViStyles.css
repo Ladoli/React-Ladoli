@@ -1027,22 +1027,17 @@ body{
 			align-items: center;
 		}
 
+		.aboutMeListItem{
+			font-size: 19px;
+			margin-top: 20px;
+			color: rgb(100,100,100);
+		}
 
-
-/*  Reduces table borders */
-.ui.table tr td, table {
-	border: 0px !important;
-	font-size: 17px;
-	color: rgb(100,100,100);
-}
-
-table i {
-	font-size: 24px !important;
-}
-
-
-
-
+		.aboutMeListItem i{
+			font-size: 29px !important;
+			min-width: 45px !important;
+			padding-right: 0px !important;
+		}
 
 
 

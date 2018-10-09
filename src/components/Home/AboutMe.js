@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { Card, Grid, Icon, Table, Button } from 'semantic-ui-react';
+import { Card, Grid, Icon, Table, Button, List } from 'semantic-ui-react';
 
 
 class AboutMe extends Component {
@@ -31,10 +31,32 @@ class AboutMe extends Component {
                 </h1>
               </Card.Header>
               <Card.Content >
-                <Table selectable padded>
+                <List>
+                  <List.Item className="aboutMeListItem">
+                    <Icon color='blue' name='eye' style={{width: "45px"}}/>
+                    <List.Content>
+                      <span className="aboutMeList">
+                        A vancouverite with a love for pretty UI
+                      </span>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item className="aboutMeListItem">
+                    <Icon  color='green' name='angle double up' />
+                    <List.Content>
+                      A devotion to self-improvement
+                    </List.Content>
+                  </List.Item>
+                  <List.Item className="aboutMeListItem">
+                    <List.Icon color='red' name='food' />
+                    <List.Content>
+                      And a passion for cooking~
+                    </List.Content>
+                  </List.Item>
+                </List>
+                {/* <Table selectable padded>
                   <Table.Body>
                     <Table.Row>
-                      <Table.Cell collapsing>
+                      <Table.Cell>
                         <Icon color='blue' name='eye' />
                       </Table.Cell>
                       <Table.Cell>
@@ -58,7 +80,7 @@ class AboutMe extends Component {
                       </Table.Cell>
                     </Table.Row>
                   </Table.Body>
-                </Table>
+                </Table> */}
               </Card.Content>
               <Card.Content extra style={{textAlign: "center"}}>
                 {/* <a href="mailto:villadolidangeloryan@gmail.com">Make something special with me</a><br/>
