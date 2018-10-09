@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import HomeBanner from './HomeBanner.js';
 import AboutMe from './AboutMe.js';
 import Proficiencies from './Proficiencies.js';
-import Salespitch from './Salespitch.js';
+// import Salespitch from './Salespitch.js';
 // import BlackjackSection from './BlackjackSection.js'
 // import RippleScriptSection from './RippleScriptSection.js'
 // import NonReactSection from './NonReactSection.js'
@@ -50,13 +50,12 @@ class Home extends Component {
   }
 
   render() {
-    this.scrollAnimations = this.scrollAnimations.bind(this);
     return (
       <div>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={HomeBanner}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={AboutMe}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Proficiencies}/>
-        <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/>
+        {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/> */}
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/> */}
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/> */}
       </div>

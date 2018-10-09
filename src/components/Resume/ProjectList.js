@@ -39,7 +39,7 @@ class ToDoList extends Component {
 
   render() {
     return (
-      <div className="container" style={{textAlign: "center"}}>
+      <div className="container" style={{textAlign: "center", marginBottom: "20px"}}>
         <div className="row" style={{textAlign: "center"}}>
           <Card style={{
             width: "100%",

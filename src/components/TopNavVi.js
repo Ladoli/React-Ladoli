@@ -14,7 +14,6 @@ class TopNavVi extends Component {
 
     let links = {
       marginLeft: "10px",
-      fontSize: "2vh",
       color: "rgba(240,240,240, .7)"
     };
 
@@ -34,7 +33,7 @@ class TopNavVi extends Component {
         </a>
         <div style={{float: "right"}}>
           <a style={links} href="/ProjectList">
-            Projects
+            Project List
           </a>
           {/* <a style={links} href="/RippleScript">
             RippleScript
