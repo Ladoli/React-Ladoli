@@ -5,11 +5,7 @@ import * as actions from "../../actions";
 import ProjectItem from "./ProjectItem";
 import { Card } from 'semantic-ui-react';
 
-class ToDoList extends Component {
-  state = {
-    addFormVisible: false,
-    addFormValue: ""
-  };
+class ProjectList extends Component {
 
   renderProjects() {
     const { data } = this.props;
@@ -67,4 +63,4 @@ const mapStateToProps = ({ data }) => {
   };
 };
 
-export default connect(mapStateToProps, actions)(ToDoList);
+export default connect(mapStateToProps, actions)(ProjectList);
