@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
 
-import data from "./projectsReducer";
+import projectData from "./projectsReducer";
+import workData from "./workExReducer";
 
 export default combineReducers({
-  data
+  projectData,
+  workData
 });

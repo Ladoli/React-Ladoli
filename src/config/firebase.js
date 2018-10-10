@@ -6,3 +6,4 @@ firebase.initializeApp(FirebaseConfig);
 
 const databaseRef = firebase.database().ref();
 export const ladoliProjects = databaseRef.child("ladoli-resume/projects");
+export const ladoliWork = databaseRef.child("ladoli-resume/work");

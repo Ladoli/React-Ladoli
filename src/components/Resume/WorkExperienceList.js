@@ -7,15 +7,35 @@ import { Card } from 'semantic-ui-react';
 
 class WorkExperienceList extends Component {
 
-
+  renderWork() {
+    const { workData } = this.props;
+    const work = map(workData, (value, key) => {
+      return <WorkExperienceItem workExperience={value} key={key} />;
+    });
+    if (!isEmpty(work)) {
+      return (
+        <Card.Group className="cardsVi">
+          {work}
+        </Card.Group>
+      )
+    }
+    return (
+      <div style={{width: "100%",textAlign: "center", paddingTop: "20%"}}>
+        <div style={{display: "inline-block"}}>
+          <div className="viLoader"></div>
+          <h1 className="fader">Loading...</h1>
+        </div>
+      </div>
+    );
+  }
 
   componentWillMount() {
-
+    this.props.fetchWorkEx();
   }
 
   render() {
     return (
-      <div className="container" style={{textAlign: "center", marginBottom: "20px"}}>
+      <div className="container" style={{textAlign: "center", marginBottom: "20px", minHeight: "100vh"}}>
         <div className="row" style={{textAlign: "center"}}>
           <Card style={{
             width: "100%",
@@ -28,11 +48,20 @@ class WorkExperienceList extends Component {
             </h1>
           </Card>
           <br/>
+          <div className="flexCenter" style={{display: "flex", width: "100%"}}>
+              {this.renderWork()}
+          </div>
         </div>
       </div>
     );
   }
 }
 
+const mapStateToProps = ({ workData }) => {
+  return {
+    workData
+  };
+};
 
-export default connect(null, actions)(ProjectList);
+
+export default connect(mapStateToProps, actions)(WorkExperienceList);

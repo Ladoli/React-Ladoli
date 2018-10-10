@@ -16,6 +16,7 @@ import RippleScriptProject from './components/Projects/RippleScriptProject';
 import Blackjack from './components/Projects/Blackjack';
 import BlackjackSection from './components/Projects/BlackjackSection';
 import ProjectList from './components/Resume/ProjectList';
+import WorkExperienceList from './components/Resume/WorkExperienceList';
 import TopNavVi from './components/TopNavVi';
 
 
@@ -31,6 +32,7 @@ ReactDOM.render(
           <Route exact path={process.env.PUBLIC_URL+"/RippleScript"} component={RippleScriptProject}/>
           <Route exact path={process.env.PUBLIC_URL+"/Blackjack"} component={Blackjack}/>
           <Route exact path={process.env.PUBLIC_URL+"/ProjectList"} component={ProjectList}/>
+          <Route exact path={process.env.PUBLIC_URL+"/WorkExperienceList"} component={WorkExperienceList}/>
           <Route exact path={process.env.PUBLIC_URL+"/BlackjackSection"} component={BlackjackSection}/>
         </Switch>
           <Route path={process.env.PUBLIC_URL+"/"} component={FooterSection}/>

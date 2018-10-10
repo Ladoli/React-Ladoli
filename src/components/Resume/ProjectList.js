@@ -8,8 +8,8 @@ import { Card } from 'semantic-ui-react';
 class ProjectList extends Component {
 
   renderProjects() {
-    const { data } = this.props;
-    const projects = map(data, (value, key) => {
+    const { projectData } = this.props;
+    const projects = map(projectData, (value, key) => {
       return <ProjectItem project={value} key={key} />;
     });
     if (!isEmpty(projects)) {
@@ -57,9 +57,9 @@ class ProjectList extends Component {
   }
 }
 
-const mapStateToProps = ({ data }) => {
+const mapStateToProps = ({ projectData }) => {
   return {
-    data
+    projectData
   };
 };
 
