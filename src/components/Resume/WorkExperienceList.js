@@ -2,20 +2,20 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { map, isEmpty } from "lodash";
 import * as actions from "../../actions";
-import ProjectItem from "./ProjectItem";
+import WorkExperienceItem from "./WorkExperienceItem";
 import { Card } from 'semantic-ui-react';
 
-class ProjectList extends Component {
+class WorkExperienceList extends Component {
 
-  renderProjects() {
-    const { projectData } = this.props;
-    const projects = map(projectData, (value, key) => {
-      return <ProjectItem project={value} key={key} />;
+  renderWork() {
+    const { workData } = this.props;
+    const work = map(workData, (value, key) => {
+      return <WorkExperienceItem workExperience={value} key={key} />;
     });
-    if (!isEmpty(projects)) {
+    if (!isEmpty(work)) {
       return (
         <Card.Group className="cardsVi">
-          {projects}
+          {work}
         </Card.Group>
       )
     }
@@ -30,12 +30,12 @@ class ProjectList extends Component {
   }
 
   componentWillMount() {
-    this.props.fetchProj();
+    this.props.fetchWorkEx();
   }
 
   render() {
     return (
-      <div className="container" style={{textAlign: "center", marginBottom: "20px"}}>
+      <div className="container" style={{textAlign: "center", marginBottom: "20px", minHeight: "100vh"}}>
         <div className="row" style={{textAlign: "center"}}>
           <Card style={{
             width: "100%",
@@ -44,12 +44,12 @@ class ProjectList extends Component {
             marginBottom: "4vh"
           }}>
             <h1 style={{width: "100%", marginTop: "20px", marginBottom: "20px", color: "rgb(255,255,255)"}} >
-              My Projects
+              Work Experience
             </h1>
           </Card>
           <br/>
           <div className="flexCenter" style={{display: "flex", width: "100%"}}>
-              {this.renderProjects()}
+              {this.renderWork()}
           </div>
         </div>
       </div>
@@ -57,10 +57,11 @@ class ProjectList extends Component {
   }
 }
 
-const mapStateToProps = ({ projectData }) => {
+const mapStateToProps = ({ workData }) => {
   return {
-    projectData
+    workData
   };
 };
 
-export default connect(mapStateToProps, actions)(ProjectList);
+
+export default connect(mapStateToProps, actions)(WorkExperienceList);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { Card, Grid, Icon, Table, Button, List } from 'semantic-ui-react';
+import { Card, Grid, Icon, Button, List } from 'semantic-ui-react';
 
 
 class AboutMe extends Component {
