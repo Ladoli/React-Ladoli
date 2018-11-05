@@ -232,8 +232,8 @@ body{
 			animation: float 2s infinite;
 		}
 
-		.arrowdown:hover{
-		}
+		/* .arrowdown:hover{
+		} */
 
 		.animateOnScroll{
 			opacity: 1 !important;
@@ -268,9 +268,9 @@ body{
 			bottom: 0px;
 		}
 
-		footer{
+		/* footer{
 
-		}
+		} */
 
 		p {
 			font-weight: bold;
@@ -410,12 +410,12 @@ body{
 			text-align: center;
 		}
 
-		.links {
+		/* .links { */
 			/* width: 100%; */
 			/* align-content: center; */
 			/* display: inline-block; */
 			/* float: left; */
-		}
+		/* } */
 
 		.blackjacklinks {
 			display: inline-block;
@@ -941,6 +941,7 @@ body{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			height: 100% !important;
 		}
 
 		.skillsCardsVi{
