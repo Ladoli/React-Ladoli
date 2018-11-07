@@ -26,7 +26,6 @@ class ProjectItem extends Component {
                   marginLeft: "20px",
                   marginRight: "20px",
                   backgroundColor: "rgb(250,250,250)",
-                  height: "100%",
                   border: "solid 1px rgb(200,200,200)",
                   borderRadius: "6px",
                   paddingBottom: "2vh"}}>
