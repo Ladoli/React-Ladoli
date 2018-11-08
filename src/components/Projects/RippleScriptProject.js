@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import rippleScript from 'ripplescript';
 import ProjectBanner from './ProjectBanner.js'
 
@@ -8,7 +8,7 @@ import ProjectBanner from './ProjectBanner.js'
 class RippleScriptProject extends Component {
 
   componentDidMount() {
-    rippleScript.rippleAnimation('.topBanner',{randomColors: [true, true], ripppleBlur: 20, rippleSpread: 10});
+    rippleScript('.topBanner',{randomColors: [true, true], ripppleBlur: 20, rippleSpread: 10});
   }
 
   rippleUpdate(){

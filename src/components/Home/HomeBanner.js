@@ -7,7 +7,7 @@ class HomeBanner extends Component {
   }
 
   componentDidMount() {
-    rippleScript.rippleAnimation('.banner',{delay: 1.7, padding: [50,50], duration: [37,37], interval: 10, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40, maxRipple: 550, minRipple: 300});
+    rippleScript('.banner',{delay: 1.7, padding: [50,50], duration: [37,37], interval: 10, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40, maxRipple: 550, minRipple: 300});
   }
 
   render() {
