@@ -16,7 +16,7 @@ class Proficiencies extends Component {
                       width: "100%",
                       minHeight: "100vh",
                   }}>
-          <div style={{paddingBottom:"20px"}}>
+          <div style={{paddingBottom:"30px"}}>
             <Header as="h3" style={{...{fontSize: "4vh", marginBottom: "3vh"},...homeHeader}}>I have experience with:</Header>
                 <Card.Group className="cardsVi">
                 <div className="profMargin animateOnScroll hiddenStateScroll">
