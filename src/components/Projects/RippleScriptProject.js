@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import rippleScript from 'ripplescript';
-import ProjectBanner from './ProjectBanner.js'
+import ProjectBanner from './ProjectBanner.js';
 
 
 
 class RippleScriptProject extends Component {
 
   componentDidMount() {
-    rippleScript('.topBanner',{randomColors: [true, true], ripppleBlur: 20, rippleSpread: 10});
+    rippleScript('.topBanner',{delay: 1.7, padding: [50,50], duration: [37,37], interval: 10, randomColors: [true,true], rippleSpread: 20, rippleBlur: 40});
   }
 
   rippleUpdate(){
-		let duration = 21;
-		let padding = 0;
-		let ripBlur = document.getElementById('ripBlur').value;
-		let randomCol = document.getElementById('ranColor').checked
-		let ripSpread = document.getElementById('ripSpread').value;
-		let defColor = document.getElementById('defColor').value;
-		let interval = document.getElementById('intervals').value;
-		if(document.getElementById('duration').value)
-			duration = document.getElementById('duration').value;
-		if(document.getElementById('padding').value)
-			padding = document.getElementById('padding').value;
+    let duration = document.getElementById('duration').value ? 
+      document.getElementById('duration').value : 37;
+    let ripBlur = document.getElementById('ripBlur').value ? 
+      document.getElementById('ripBlur').value : 40;
+    let ripSpread = document.getElementById('ripSpread').value ?
+      document.getElementById('ripSpread').value : 20;
+    let interval = document.getElementById('intervals').value ?
+      document.getElementById('intervals').value : 10;
 
-		window.rippleAnimation('.topBanner',{duration: [duration,duration], interval: interval, randomColors: [randomCol,randomCol], rippleSpread: ripSpread, rippleBlur: ripBlur, defColor: defColor, padding: [padding, padding]});
+    let defColor = document.getElementById('defColor').value;
+    let randomCol = document.getElementById('ranColor').checked;
+    let padding = 50;
+
+    rippleScript('.topBanner',{delay: 1.7, duration: [duration,duration], interval: interval, randomColors: [randomCol,randomCol], rippleSpread: ripSpread, rippleBlur: ripBlur, defColor: defColor, padding: [padding, padding]});
 	}
 
   render() {
@@ -33,8 +34,8 @@ class RippleScriptProject extends Component {
         <Route render={()=><ProjectBanner styleProp={{height: '500px'}}/>}/>
         <div className="flexCenterAll" style={{minHeight: "100vh"}}>
           <div>
-            <p className="neatParagraph">
               <div>
+              <p className="neatParagraph">
                 This is one of my reusable projects.
                 I've developed a hobby creating CSS animations but they are quite tricky.
                 This script, which I named as Ripple-Script, allows anyone to easily add a ripple CSS to their pages as seen above.
@@ -43,8 +44,8 @@ class RippleScriptProject extends Component {
                 <a href='https://www.npmjs.com/package/ripplescript'>Check it out here!</a>
                 <br/><br/>
                 You can use the options below (Simplified) to customize how Ripple-Script behaves. Have fun!
+                </p>
               </div>
-            </p>
             <br/>
             <center>
               <div id="rippleOptions">
