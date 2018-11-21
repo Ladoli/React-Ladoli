@@ -35,7 +35,7 @@ class RippleScriptProject extends Component {
         <div className="flexCenterAll" style={{minHeight: "100vh"}}>
           <div>
               <div>
-              <p className="neatParagraph">
+              <div style={{textAlign: "center", fontWeight: "bold"}} className="neatParagraph">
 		<div>
                 This is one of my reusable projects.
                 I've developed a hobby creating CSS animations but they are quite tricky.
@@ -48,7 +48,7 @@ class RippleScriptProject extends Component {
 		<div>
                 	You can use the options below (Simplified) to customize how Ripple-Script behaves. Have fun!
 		</div>
-                </p>
+                </div>
               </div>
             <br/>
             <center>
