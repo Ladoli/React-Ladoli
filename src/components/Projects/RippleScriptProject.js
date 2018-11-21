@@ -36,14 +36,18 @@ class RippleScriptProject extends Component {
           <div>
               <div>
               <p className="neatParagraph">
+		<div>
                 This is one of my reusable projects.
                 I've developed a hobby creating CSS animations but they are quite tricky.
                 This script, which I named as Ripple-Script, allows anyone to easily add a ripple CSS to their pages as seen above.
                 It even has its own NPM package!
+		</div>
                 <br/>
                 <a href='https://www.npmjs.com/package/ripplescript'>Check it out here!</a>
                 <br/><br/>
-                You can use the options below (Simplified) to customize how Ripple-Script behaves. Have fun!
+		<div>
+                	You can use the options below (Simplified) to customize how Ripple-Script behaves. Have fun!
+		</div>
                 </p>
               </div>
             <br/>
