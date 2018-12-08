@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { Card, Grid, Icon, Button, List } from 'semantic-ui-react';
+import './AboutMe.css';
 
 
 class AboutMe extends Component {
@@ -31,19 +32,22 @@ class AboutMe extends Component {
                 </h1>
               </Card.Header>
               <Card.Content >
+                <div className="aboutMeTitle">
+                  A vancouverite with
+                </div>
                 <List>
                   <List.Item className="aboutMeListItem">
                     <Icon color='blue' name='eye' style={{width: "45px"}}/>
                     <List.Content>
                       <span className="aboutMeList">
-                        A vancouverite with a love for pretty UI
+                        A love for pretty UI
                       </span>
                     </List.Content>
                   </List.Item>
                   <List.Item className="aboutMeListItem">
                     <Icon  color='green' name='angle double up' />
                     <List.Content>
-                      A devotion to self-improvement
+                      A devotion to continuous improvement
                     </List.Content>
                   </List.Item>
                   <List.Item className="aboutMeListItem">
