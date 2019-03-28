@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { Card, Grid, Icon, Button, List } from 'semantic-ui-react';
+import { Card, Grid, Icon, Button } from 'semantic-ui-react';
 import './AboutMe.css';
 
 
@@ -31,11 +31,36 @@ class AboutMe extends Component {
                   Who am I?
                 </h1>
               </Card.Header>
-              <Card.Content >
+              <Card.Content style={{display: 'flex', flexDirection: 'column'}}>
                 <div className="aboutMeTitle">
                   A vancouverite with
                 </div>
-                <List>
+                <div style={{
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  justifyContent: 'space-evenly',
+                  flex: 1 
+                }}>
+                  <div className="aboutMeListItem">
+                      <Icon color='blue' name='eye' style={{width: "45px"}}/>
+                      <span className="aboutMeList">
+                            A love for pretty UI
+                      </span>
+                  </div>
+                  <div className="aboutMeListItem">
+                      <Icon  color='green' name='angle double up' />
+                      <span className="aboutMeList">
+                        A devotion to continuous improvement
+                      </span>
+                  </div>
+                  <div className="aboutMeListItem">
+                      <Icon color='red' name='food' />
+                      <span className="aboutMeList">
+                        And a passion for cooking~
+                      </span>
+                  </div>
+                </div>
+                {/* <List>
                   <List.Item className="aboutMeListItem">
                     <Icon color='blue' name='eye' style={{width: "45px"}}/>
                     <List.Content>
@@ -56,7 +81,7 @@ class AboutMe extends Component {
                       And a passion for cooking~
                     </List.Content>
                   </List.Item>
-                </List>
+                </List> */}
                 {/* <Table selectable padded>
                   <Table.Body>
                     <Table.Row>
@@ -92,7 +117,7 @@ class AboutMe extends Component {
                 <br/> */}
                 <Link to="/ProjectList">
                   <Button primary>
-                    Checkout what I've made
+                    Check out what I've made
                   </Button>
                 </Link>
                 {/* <Link to="/ProjectList"></Link> */}

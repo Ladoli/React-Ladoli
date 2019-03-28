@@ -39,7 +39,7 @@ class TopNavVi extends Component {
             RippleScript
           </a> */}
         </div>
-        <hr style={{borderColor: "rgba(180,220,255, .7)", margin: "3px 5px 0px 5px"}}/>
+        <hr style={{borderColor: "rgba(180,220,255, .7)", margin: "7px 5px 0px 5px"}}/>
       </div>
     );
   }
