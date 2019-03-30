@@ -1,0 +1,17 @@
+.animateBackground{
+    position: absolute;
+    min-height: 200%;
+    min-width: 200%;
+    animation: swirl 200s infinite linear;
+    z-index: 0;
+}
+
+.banner{
+    position: relative;
+}
+
+@keyframes swirl {
+    0%{ transform: rotate(0deg) translateX(0%); }
+    50%{ transform: rotate(180deg) translateX(-25%); }
+    100%{ transform: rotate(359deg) translateX(0%) }
+}

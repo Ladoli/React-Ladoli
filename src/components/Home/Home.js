@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
-import HomeBanner from './HomeBanner.js';
-import AboutMe from './AboutMe.js';
-import Proficiencies from './Proficiencies.js';
+import HomeBanner from './HomeBanner';
+import AboutMe from './AboutMe';
+import Proficiencies from './Proficiencies';
 // import Salespitch from './Salespitch.js';
 // import BlackjackSection from './BlackjackSection.js'
 // import RippleScriptSection from './RippleScriptSection.js'

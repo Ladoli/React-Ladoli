@@ -13,7 +13,7 @@ class FooterSection extends Component {
           <div className="">
             <div style={{textAlign: "center"}}>
               <p style={{fontWeight: "500" }}>
-                <a href="mailto:villadolidangeloryan@gmail.com">Hire Me!</a>
+                <a href="mailto:villadolidangeloryan@gmail.com">Like what you see? Let's work together.</a>
               </p>
             </div>
           </div>

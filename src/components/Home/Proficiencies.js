@@ -40,6 +40,35 @@ class Proficiencies extends Component {
                   </Card>
                 </div>
                 <div className=" profMargin animateOnScroll hiddenStateScroll">
+                  <Card className="skillsCardsVi sCVi-2" style={skillCards}>
+                      <Card.Content>
+                      <svg className="skillsIcons" viewBox="-10 -10 116 111">
+                        <clipPath id="clip">
+                          <path d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z"/>
+                        </clipPath>
+                        <linearGradient id="gradient-1" gradientUnits="userSpaceOnUse" x1="7" y1="64" x2="50" y2="107">
+                          <stop offset="0" stopColor="#f9a03c"/>
+                          <stop offset="1" stopColor="#f7974e"/>
+                        </linearGradient>
+                        <linearGradient id="gradient-2" gradientUnits="userSpaceOnUse" x1="2" y1="-2" x2="87" y2="84">
+                          <stop offset="0" stopColor="#f26d58"/>
+                          <stop offset="1" stopColor="#f9a03c"/>
+                        </linearGradient>
+                        <linearGradient id="gradient-3" gradientUnits="userSpaceOnUse" x1="45" y1="-10" x2="108" y2="53">
+                          <stop offset="0" stopColor="#b84e51"/>
+                          <stop offset="1" stopColor="#f68e48"/>
+                        </linearGradient>
+                        <g clipPath="url(#clip)">
+                          <path d="M-100,-102m-28,0v300h300z" fill="url(#gradient-1)"/>
+                          <path d="M-100,-102m28,0h300v300z" fill="url(#gradient-3)"/>
+                          <path d="M-100,-102l300,300" fill="none" stroke="url(#gradient-2)" strokeWidth="40"/>
+                        </g>                      
+                      </svg>
+                    </Card.Content>
+                    <Card.Content>D3.js</Card.Content>
+                  </Card>
+                </div>
+                <div className=" profMargin animateOnScroll hiddenStateScroll">
                   <Card className="skillsCardsVi sCVi-1" style={skillCards}>
                     <Card.Content>
                     <svg className="skillsIcons" viewBox="0 0 100 100">
@@ -52,6 +81,16 @@ class Proficiencies extends Component {
                   </Card.Content>
                   <Card.Content>Redux</Card.Content>
                 </Card>
+                </div>
+                <div className=" profMargin animateOnScroll hiddenStateScroll">
+                  <Card className="skillsCardsVi sCVi-1" style={skillCards}>
+                    <Card.Content>
+                      <svg className="skillsIcons" viewBox="0 0 128 128">
+                      <path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+                      </svg>
+                    </Card.Content>
+                    <Card.Content>CSS</Card.Content>
+                  </Card>
                 </div>
                 <div className=" profMargin animateOnScroll hiddenStateScroll">
                   <Card className="skillsCardsVi sCVi-4" style={skillCards}>
@@ -87,16 +126,6 @@ class Proficiencies extends Component {
                   </Card.Content>
                   <Card.Content>HTML</Card.Content>
                 </Card>
-                </div>
-                <div className=" profMargin animateOnScroll hiddenStateScroll">
-                  <Card className="skillsCardsVi sCVi-1" style={skillCards}>
-                    <Card.Content>
-                      <svg className="skillsIcons" viewBox="0 0 128 128">
-                      <path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
-                      </svg>
-                    </Card.Content>
-                    <Card.Content>CSS</Card.Content>
-                  </Card>
                 </div>
                 <div className=" profMargin animateOnScroll hiddenStateScroll">
                   <Card className="skillsCardsVi sCVi-3" style={skillCards}>

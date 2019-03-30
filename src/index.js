@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import 'semantic-ui-css/semantic.min.css';
 
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
