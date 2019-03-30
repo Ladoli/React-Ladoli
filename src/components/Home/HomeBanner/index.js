@@ -16,11 +16,6 @@ class HomeBanner extends Component {
       <div 
         className="banner"
       >
-        {/* <div  className="animateBackground"
-          style={{
-            backgroundImage: `url(${starField})`
-          }}>
-        </div> */}
         <img 
           src={starField} 
           className="animateBackground"
