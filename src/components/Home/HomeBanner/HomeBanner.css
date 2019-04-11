@@ -1,7 +1,7 @@
 .animateBackground{
     position: absolute;
-    min-height: 150%;
-    min-width: 150%;
+    min-height: 200vmax;
+    min-width: 200vmax;
     animation: swirl 200s infinite linear;
     z-index: 0;
 }
