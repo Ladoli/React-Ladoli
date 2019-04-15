@@ -54,7 +54,9 @@ class Home extends Component {
       <div>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={HomeBanner}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={AboutMe}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={()=><Proficiencies type='speciality'/>}/>
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Proficiencies}/>
+
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={Salespitch}/> */}
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={RippleScriptSection}/> */}
         {/* <Route exact path={process.env.PUBLIC_URL+"/"} component={NonReactSection}/> */}
