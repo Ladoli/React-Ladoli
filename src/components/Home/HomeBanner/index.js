@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import rippleScript from 'ripplescript';
-import starField from '../../../Images/starfield.png';
 import './HomeBanner.css';
+import Particles from 'react-particles-js';
 class HomeBanner extends Component {
   scrollToMain(){
     document.getElementById('portfolioPic').scrollIntoView({ behavior: 'smooth' });
@@ -16,9 +16,60 @@ class HomeBanner extends Component {
       <div 
         className="banner"
       >
-        <img 
-          src={starField} 
-          className="animateBackground"
+        <Particles 
+            className="particleDiv"
+            canvasClassName="particleContainer"
+            params={{
+                particles:{
+                    opacity:{
+                        value: .8,
+                        anim: {
+                            enable: true,
+                            speed: .5,
+                            opacity_min: .3,
+                        }
+                    },
+                    color:{
+                        value: ['#EEE', '#AA2244', '#EEE', '22EEFF', '#EEE', '#EEE8AA', '#FFF', '#DDD']
+                    },
+                    number: {
+                        // value: 5,
+                        density: {
+                            enable: true,
+                            value_area: 50
+                        }
+                    },
+                    shape:{
+                        type: 'circle',
+                    },
+                    size: {
+                        value: 3,
+                        random: true
+                    },
+                    line_linked: {
+                        distance: 1,
+                        color:  '#61ce70',
+                        width: 0,
+                        opacity: 0,
+                        // shadow: {
+                        //     enable: true,
+                        //     color: '#aaffaa',
+                        //     blur: 4
+                        // }
+                    },
+                    move: {
+                        out_mode: 'out',
+                        random: true,
+                        speed: .3,
+                        enable: true,
+                        "bounce": false,
+                        attract: {
+                            enable: false,
+                        }
+                    },
+                
+                },
+            }}
         />
         <div 
             id="headBanner" 

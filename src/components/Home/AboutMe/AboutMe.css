@@ -18,6 +18,12 @@
     align-items: flex-start;
 }
 
+.aboutMeMainTitle{
+    font-size: 25px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
 .aboutMeListItem{
     font-size: 19px;
     margin-top: 20px;

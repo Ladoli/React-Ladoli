@@ -55,9 +55,9 @@ class AboutMe extends Component {
             <div 
               className="animateOnScroll hiddenStateScroll aboutMeCard"
             >
-              <h1 style={{fontSize: "42px", color: '#333', marginBottom: '0px'}}>
+              <div className="aboutMeMainTitle">
                 Who am I?
-              </h1>
+              </div>
               <div className="aboutMeTitle">
                   A vancouverite with
                 </div>
@@ -87,7 +87,8 @@ class AboutMe extends Component {
                 <br/> */}
                 <div style={{
                   width: '100%',
-                  textAlign: 'center'
+                  textAlign: 'center',
+                  margin: '10px'
                 }}>
                   <Link to="/ProjectList">
                     <Button primary>

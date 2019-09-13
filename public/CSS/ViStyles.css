@@ -227,7 +227,7 @@ body{
 			border-bottom: 6px solid silver;
 			border-right: 6px solid silver;
 			border-radius: 5px;
-			bottom: 40px;
+			bottom: 10vh;
 			position: absolute;
 			animation: float 2s infinite;
 		}
@@ -1073,9 +1073,17 @@ body{
 			.proficiency{
 				font-size: 27px;
 			}
+
+			.top-Nav-Vi {
+				font-size: 25px;
+			}
+
 		}
 
 		@media (max-width : 600px) {
+			.top-Nav-Vi {
+				font-size: 18px;
+			}
 
 			.cardslot img {
 				width: 60px;
@@ -1163,7 +1171,9 @@ body{
 
 
 		@media (max-width : 370px) {
-
+			.top-Nav-Vi {
+				font-size: 14px;
+			}
 
 			.cardslot img {
 				width: 30px;
