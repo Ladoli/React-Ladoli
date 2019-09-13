@@ -14,8 +14,8 @@ body{
 }
 
 #headBanner {
-	width: 50vh;
-	height: 50vh;
+	width: 50vmin;
+	height: 50vmin;
 	border-radius: 50%;
 	display: flex;
 	box-shadow:
