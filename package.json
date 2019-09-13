@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.5.5",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "firebase": "^5.5.7",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
@@ -12,7 +12,7 @@
     "react-particles-js": "^2.7.0",
     "react-redux": "^5.1.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^3.1.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "ripplescript": "^1.0.2",
