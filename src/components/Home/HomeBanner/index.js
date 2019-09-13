@@ -22,7 +22,7 @@ class HomeBanner extends Component {
             params={{
                 particles:{
                     opacity:{
-                        value: .8,
+                        value: .6,
                         anim: {
                             enable: true,
                             speed: .5,
